@@ -95,6 +95,8 @@
 
             localStorage.setItem('products', JSON.stringify(products));
             displayAllProducts();
+            closeModal("add")
+
         }
 
 
