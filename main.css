@@ -1,0 +1,147 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #F0F2F5;
+}
+.w-100{
+    width: 100%;
+}
+.my-1{
+    margin: 10px 0px;
+}
+input,textarea{
+    background: transparent;
+    border: 1px solid gray;
+    outline: none;
+    padding: 5px;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.342);
+}
+textarea::placeholder{
+    color: rgba(0, 0, 0, 0.342);
+}
+
+.btn-primary{
+    padding: 6px;
+    border: none;
+    background-color: rgb(14, 107, 194);
+    color: rgb(248, 239, 239);
+    border-radius: 5px;
+}
+.btn-success{
+    color: #fff;
+    background-color: #5cb85c;
+    border-radius: 5px;
+    padding: 6px;
+    border: none;
+}
+.btn-danger{
+        padding: 6px;
+    border: none;
+    background-color: rgb(201, 42, 42);
+    color: rgb(248, 239, 239);
+    border-radius: 5px;
+}
+
+
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.596);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    display: none;
+    transition: all 1s;
+}
+.modal .inside{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+
+.navbar{
+    background-color: white;
+    padding: 0px 5px;
+    box-shadow: 0px 1px 10px grey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.add-icon{
+    height: 40px ;
+    width: 40px;
+    cursor: pointer;
+}
+.products{
+    margin: 50px 0px;
+    padding: 0px 10px;
+}
+.cards{
+    text-align: center;
+}
+
+.header-card{
+    display: inline-block;
+    width: 300px !important;
+    margin: 20px;
+}
+.cards .card{
+    border-radius: 10px;
+    background-color:white;
+    padding: 15px;
+    
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.product_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.product_price{
+    font-weight: bold;
+}
+.count-carts{
+    position: absolute;
+    top: 14px;
+    left: 23px;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .cart-image{
+    height: 80px;
+    width: 80px;
+  }
+  .show-image{
+    width: 100%;
+    width: 250px;
+    height: 200px;
+  }

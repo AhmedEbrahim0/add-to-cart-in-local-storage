@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="navbar">
+        <span class="count-carts">0</span>
+
+        <img class="add-icon" onclick="openCart('carts')" src="images/Add-Cart-icon.png" alt="">
+
+        <div class="modal" id="carts">
+            <div class="inside">
+
+                <div class="body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>  Name </th>
+                                <th>  Price </th>
+                                <th>  Details </th>
+                                <th>  Image </th>
+                                <th>  Remove   </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <button class="btn-danger" onclick="closeModal('carts')">  Close </button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="products">
+        <button class="btn-primary" onclick="openModal('add')"> Add Porduct </button>
+        <div class="modal" id="add">
+            <div class="inside">
+                <div >
+                    <input type="text"  name="product_name" placeholder="Product Name">
+                    <input type="number"  name="product_price"  placeholder="Product Price">
+                </div>
+                <div class="my-1">
+                    <textarea name="product_details"  cols="46" placeholder="Details"></textarea>
+                </div>
+
+                <div>
+                    <button class="btn-primary" onclick="addProduct()">  Save </button>
+                    <button class="btn-danger" onclick="closeModal('add')">  Close </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+
+
+
+
+        </div>
+        <div class="modal" id="show">
+            <div class="inside">
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="main.js"> </script>
+    
+</body>
+</html>
